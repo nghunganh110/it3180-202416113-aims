@@ -9,6 +9,12 @@
 - Sắp xếp giỏ hàng theo tiêu đề và giá.
 - Tìm DVD theo thể loại.
 
+## [1.0.1] - 2026-10-24
+
+### Fixed
+
+- Tìm tiêu đề DVD không phân biệt chữ hoa và chữ thường trên dòng 1.0.x.
+
 ## [1.0.0] - 2026-10-24
 
 ### Added
