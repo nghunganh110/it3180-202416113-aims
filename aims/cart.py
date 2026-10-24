@@ -29,3 +29,9 @@ class Cart:
             f"{index}. {dvd.title} — {dvd.cost:.2f} $"
             for index, dvd in enumerate(self.items, start=1)
         )
+
+    def sort_by_title(self) -> list[DigitalVideoDisc]:
+        return sorted(self.items, key=lambda dvd: dvd.title.casefold())
+
+    def sort_by_cost(self) -> list[DigitalVideoDisc]:
+        return sorted(self.items, key=lambda dvd: dvd.cost)

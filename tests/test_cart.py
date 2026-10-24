@@ -28,6 +28,14 @@ class CartTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             cart.total_cost_with_discount(150)
 
+    def test_sort_does_not_change_original_order(self) -> None:
+        cart = Cart()
+        cart.add_dvd(DigitalVideoDisc("Zulu", cost=20.0))
+        cart.add_dvd(DigitalVideoDisc("alpha", cost=10.0))
+        self.assertEqual([dvd.title for dvd in cart.sort_by_title()], ["alpha", "Zulu"])
+        self.assertEqual([dvd.cost for dvd in cart.sort_by_cost()], [10.0, 20.0])
+        self.assertEqual(cart.items[0].title, "Zulu")
+
 
 if __name__ == "__main__":
     unittest.main()
