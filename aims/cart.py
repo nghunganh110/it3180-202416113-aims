@@ -15,3 +15,11 @@ class Cart:
 
     def total_cost(self) -> float:
         return round(sum(dvd.cost for dvd in self.items), 2)
+
+    def print_cart(self) -> str:
+        if not self.items:
+            return "The cart is empty"
+        return "\n".join(
+            f"{index}. {dvd.title} — {dvd.cost:.2f} $"
+            for index, dvd in enumerate(self.items, start=1)
+        )
