@@ -15,6 +15,8 @@ python -m unittest discover -s tests -v
 
 ## Báo cáo trả lời câu hỏi thảo luận
 
+[Báo cáo tổng hợp và bằng chứng kiểm tra](docs/submission-report.md) liên kết các câu trả lời, mốc bài nộp và kết quả kiểm thử.
+
 | Lab | Nội dung | Báo cáo |
 | --- | --- | --- |
 | 01 | Git cơ bản, refactor, baseline | [answers-lab01.md](docs/answers-lab01.md) |
