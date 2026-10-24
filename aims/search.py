@@ -6,4 +6,4 @@ def search_by_category(items: list[DigitalVideoDisc], category: str) -> list[Dig
 
 
 def search_by_title(items: list[DigitalVideoDisc], keyword: str) -> list[DigitalVideoDisc]:
-    return [dvd for dvd in items if keyword in dvd.title]
+    return [dvd for dvd in items if keyword.casefold() in dvd.title.casefold()]
