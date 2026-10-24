@@ -21,6 +21,13 @@ class CartTests(unittest.TestCase):
     def test_print_empty_cart(self) -> None:
         self.assertEqual(Cart().print_cart(), "The cart is empty")
 
+    def test_discount_returns_remaining_total(self) -> None:
+        cart = Cart()
+        cart.add_dvd(DigitalVideoDisc("DVD", cost=100.0))
+        self.assertEqual(cart.total_cost_with_discount(20), 80.0)
+        with self.assertRaises(ValueError):
+            cart.total_cost_with_discount(150)
+
 
 if __name__ == "__main__":
     unittest.main()
