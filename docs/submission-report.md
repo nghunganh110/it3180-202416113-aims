@@ -21,7 +21,7 @@ Ngày 24/10/2026, chạy `python3 main.py` từ bản lưu của từng tag và 
 | `v1.0.1` | 7 | Đạt |
 | `v1.1.0`, `master` | 9 | Đạt |
 
-GitHub Actions cũng chạy thành công trên các Pull Request và lần đẩy `master` đã có workflow. [GitHub Release v1.0.0](https://github.com/nghunganh110/it3180-github-practice/releases/tag/v1.0.0) được phát hành từ tag của `release/lab04`. Các nhánh `master` và `release/lab01` đến `release/lab05` đã được cấu hình yêu cầu Pull Request; `master` còn yêu cầu kiểm thử `test` thành công. Khi làm một mình, số lượt phê duyệt bắt buộc là 0 theo hướng dẫn của bài.
+GitHub Actions cũng chạy thành công trên các Pull Request và lần đẩy `master` đã có workflow. [GitHub Release v1.0.0](https://github.com/nghunganh110/it3180-202416113-aims/releases/tag/v1.0.0) được phát hành từ tag của `release/lab04`. Các nhánh `master` và `release/lab01` đến `release/lab05` đã được cấu hình yêu cầu Pull Request; `master` còn yêu cầu kiểm thử `test` thành công. Khi làm một mình, số lượt phê duyệt bắt buộc là 0 theo hướng dẫn của bài.
 
 ## Phạm vi bằng chứng trên GitHub
 
