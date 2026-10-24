@@ -5,6 +5,7 @@
 ### Added
 
 - Sắp xếp giỏ hàng theo tiêu đề và giá.
+- Tìm DVD theo thể loại.
 
 ## [1.0.0] - 2026-10-24
 

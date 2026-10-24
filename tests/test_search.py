@@ -1,7 +1,7 @@
 import unittest
 
 from aims.dvd import DigitalVideoDisc
-from aims.search import search_by_title
+from aims.search import search_by_category, search_by_title
 
 
 class SearchTests(unittest.TestCase):
@@ -13,6 +13,9 @@ class SearchTests(unittest.TestCase):
 
     def test_missing_title(self) -> None:
         self.assertEqual(search_by_title(self.items, "Star Wars"), [])
+
+    def test_category_search(self) -> None:
+        self.assertEqual(search_by_category(self.items, "animation"), self.items)
 
 
 if __name__ == "__main__":
