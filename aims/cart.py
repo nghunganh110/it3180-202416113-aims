@@ -17,7 +17,9 @@ class Cart:
         return round(sum(dvd.cost for dvd in self.items), 2)
 
     def total_cost_with_discount(self, percent: float) -> float:
-        return round(self.total_cost() * percent / 100, 2)
+        if not 0 <= percent <= 100:
+            raise ValueError("Discount must be between 0 and 100 percent")
+        return round(self.total_cost() * (1 - percent / 100), 2)
 
     def print_cart(self) -> str:
         if not self.items:
