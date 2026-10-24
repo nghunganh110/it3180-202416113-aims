@@ -16,6 +16,9 @@ class Cart:
     def total_cost(self) -> float:
         return round(sum(dvd.cost for dvd in self.items), 2)
 
+    def total_cost_with_discount(self, percent: float) -> float:
+        return round(self.total_cost() * percent / 100, 2)
+
     def print_cart(self) -> str:
         if not self.items:
             return "The cart is empty"
