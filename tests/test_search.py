@@ -11,6 +11,9 @@ class SearchTests(unittest.TestCase):
     def test_exact_case_title_search(self) -> None:
         self.assertEqual(search_by_title(self.items, "Lion"), self.items)
 
+    def test_title_search_is_case_insensitive(self) -> None:
+        self.assertEqual(search_by_title(self.items, "lion"), self.items)
+
     def test_missing_title(self) -> None:
         self.assertEqual(search_by_title(self.items, "Star Wars"), [])
 
